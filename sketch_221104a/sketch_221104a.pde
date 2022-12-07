@@ -10,13 +10,19 @@ float bottomX, bottomY, bottomWidth, bottomHeight;
 float picWidthAdjusted1=0.0, picHeightAdjusted1=0.0;
 float picWidthAdjusted2=0.0, picHeightAdjusted2=0.0;
 float picWidthAdjusted3=0.0, picHeightAdjusted3=0.0;
-PImage pic, pic2, pic3;
+float picWidthAdjusted4=0.0, picHeightAdjusted4=0.0;
+float picWidthAdjusted5=0.0, picHeightAdjusted5=0.0;
+float picWidthAdjusted6=0.0, picHeightAdjusted6=0.0;
+float picWidthAdjusted7=0.0, picHeightAdjusted7=0.0;
+float picWidthAdjusted8=0.0, picHeightAdjusted8=0.0;
+float picWidthAdjusted9=0.0, picHeightAdjusted9=0.0;
+PImage pic, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9;
 Boolean nightMode=false;
 int tintDayMode=255, tintDayModeOpacity=50, tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85;
 //
 void setup()
 {
-  size(800, 600); //Landscape
+  size(1000, 1000); //Landscape
   //Copy Display Algorithm from Hello World
   appWidth = width;
   appHeight = height;
@@ -24,18 +30,35 @@ void setup()
   //Image Dimensions for Aspect Ratio: image meta data
   //baboon.jpg
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
-  int picWidth = 800; //baboon Landscape
+  int picWidth = 800; 
   int picHeight = 600;
-  int picWidth2 = 860; //baboon Landscape
+  int picWidth2 = 860; 
   int picHeight2 = 529; 
-  int picWidth3 = 325; //baboon Lanscape
+  int picWidth3 = 325; 
   int picHeight3 = 485;
+  int picWidth4 = 800; 
+  int picHeight4 = 600;
+  int picWidth5 = 860; 
+  int picHeight5 = 529; 
+  int picWidth6 = 325; 
+  int picHeight6 = 485;
+  int picWidth7 = 800; 
+  int picHeight7 = 600;
+  int picWidth8 = 860; 
+  int picHeight8 = 529; 
+  int picWidth9 = 325; 
+  int picHeight9 = 485;
   //
   //Image Orientation: Landscape, Square, Portrait
   float smallerDimension, largerDimension, imageWidthRatio=0.0, imageHeightRatio=0.0;
   float smallerDimension2, largerDimension2, imageWidthRatio2=0.0, imageHeightRatio2=0.0;
   float smallerDimension3, largerDimension3, imageWidthRatio3=0.0, imageHeightRatio3=0.0;
-  Boolean widthLarger=false, heightLarger=false, widthLarger2=false, heightLarger2=false;
+   float smallerDimension4, largerDimension4, imageWidthRatio4=0.0, imageHeightRatio4=0.0;
+  float smallerDimension5, largerDimension5, imageWidthRatio5=0.0, imageHeightRatio5=0.0;
+  float smallerDimension6, largerDimension6, imageWidthRatio6=0.0, imageHeightRatio6=0.0;
+  Boolean widthLarger=false, heightLarger=false, widthLarger2=false, heightLarger2=false, widthLarger3=false, heightLarger3=false,
+  widthLarger4=false, heightLarger4=false, widthLarger5=false, heightLarger5=false, widthLarger6=false, heightLarger6=false,
+  widthLarger7=false, heightLarger7=false, widthLarger8=false, heightLarger8=false, widthLarger9=false, heightLarger9=false;
   if ( picWidth >= picHeight ) { //True if Landscape or Square
     largerDimension = picWidth;
     smallerDimension = picHeight;
@@ -71,9 +94,15 @@ void setup()
   }
   //
   //Population
-  pic = loadImage("../images used/baboon.jpg");
-  pic2 = loadImage("../images used/baboon.jpg");
-  pic3 = loadImage("../images used/baboon.jpg");
+  pic = loadImage("../images used/");
+  pic2 = loadImage("../images used/");
+  pic3 = loadImage("../images used/");
+  pic4 = loadImage("../images used/");
+  pic5 = loadImage("../images used/");
+  pic6 = loadImage("../images used/");
+  pic7 = loadImage("../images used/");
+  pic8 = loadImage("../images used/");
+  pic9 = loadImage("../images used/");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
