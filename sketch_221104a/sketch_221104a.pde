@@ -94,10 +94,10 @@ void setup()
   }
   //
   //Population
-  pic = loadImage("../images used/");
-  pic2 = loadImage("../images used/");
-  pic3 = loadImage("../images used/");
-  pic4 = loadImage("../images used/");
+  pic = loadImage("../images used/honey badger.jpg");
+  pic2 = loadImage("../images used/hyena.jfif");
+  pic3 = loadImage("../images used/giaraffe.jfif");
+  pic4 = loadImage("../images used/rhino.jfif");
   pic5 = loadImage("../images used/");
   pic6 = loadImage("../images used/");
   pic7 = loadImage("../images used/");
