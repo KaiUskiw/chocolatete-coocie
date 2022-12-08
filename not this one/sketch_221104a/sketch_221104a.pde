@@ -30,24 +30,24 @@ void setup()
   //Image Dimensions for Aspect Ratio: image meta data
   //baboon.jpg
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
-  int picWidth = 333; 
-  int picHeight = 333;
-  int picWidth2 = 333; 
-  int picHeight2 = 333; 
-  int picWidth3 = 333; 
-  int picHeight3 = 333;
-  int picWidth4 = 333; 
-  int picHeight4 = 333;
-  int picWidth5 = 333; 
-  int picHeight5 = 333; 
-  int picWidth6 = 333; 
-  int picHeight6 = 333;
-  int picWidth7 = 333; 
-  int picHeight7 = 333;
-  int picWidth8 = 333; 
-  int picHeight8 = 333; 
-  int picWidth9 = 333; 
-  int picHeight9 = 333;
+  int picWidth = 800; 
+  int picHeight = 600;
+  int picWidth2 = 860; 
+  int picHeight2 = 529; 
+  int picWidth3 = 325; 
+  int picHeight3 = 485;
+  int picWidth4 = 800; 
+  int picHeight4 = 600;
+  int picWidth5 = 860; 
+  int picHeight5 = 529; 
+  int picWidth6 = 325; 
+  int picHeight6 = 485;
+  int picWidth7 = 800; 
+  int picHeight7 = 600;
+  int picWidth8 = 860; 
+  int picHeight8 = 529; 
+  int picWidth9 = 325; 
+  int picHeight9 = 485;
   //
   //Image Orientation: Landscape, Square, Portrait
   float smallerDimension, largerDimension, imageWidthRatio=0.0, imageHeightRatio=0.0;
@@ -98,11 +98,11 @@ void setup()
   pic2 = loadImage("../images used/hyena.jfif");
   pic3 = loadImage("../images used/giaraffe.jfif");
   pic4 = loadImage("../images used/rhino.jfif");
-  pic5 = loadImage("../images used/elephant.jfif");
-  pic6 = loadImage("../images used/wildebeest.jfif");
-  pic7 = loadImage("../images used/tiger.jfif");
-  pic8 = loadImage("../images used/hippo.jfif");
-  pic9 = loadImage("../images used/lion.jfif");
+  pic5 = loadImage("../images used/");
+  pic6 = loadImage("../images used/");
+  pic7 = loadImage("../images used/");
+  pic8 = loadImage("../images used/");
+  pic9 = loadImage("../images used/");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
