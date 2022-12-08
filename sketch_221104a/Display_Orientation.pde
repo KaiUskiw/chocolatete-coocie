@@ -13,6 +13,8 @@ void display() {
       print("Display Geoemtry is Good to Go.");
     } else {
       println("STOP, is broken");
+      println(instruct);
+      exit();
     }
   }
 }//End display
