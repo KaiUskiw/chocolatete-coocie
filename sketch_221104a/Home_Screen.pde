@@ -15,7 +15,7 @@ void homeScreen() {
 }//End homeScreen
 //
 void backgroundWhiteScreen(){
- fill(white)
+ fill(white);
  noStroke();
  rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight); //White colour
  stroke(1); //Reset: 1 pixel
