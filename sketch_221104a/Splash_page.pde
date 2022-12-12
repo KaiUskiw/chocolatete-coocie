@@ -10,7 +10,8 @@ void splashScreen() {
    - Any other instructions
    - Splash Screen Details
    */
-   background(255); //testing only
+   //background(255); //testing only, must have rect() as screen for background image
+   backgroundWhiteScreen();
    spaceBarText();
 }//End splashScreen
 //

@@ -1,3 +1,5 @@
+float  backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+//
 void homeScreen() {
   println("Arrived at Home Screen");//Testing For SplashScreenStart Button Working
   /* Home Screen Expectations
@@ -11,5 +13,18 @@ void homeScreen() {
   */
   //
 }//End homeScreen
+//
+void backgroundWhiteScreen(){
+ fill(white)
+ noStroke();
+ rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight); //White colour
+ stroke(1); //Reset: 1 pixel
+ fill(white); //Reset: white
+}//End backgroundWhiteScreen 
+//
+void backgroundImage() {
+  backgroundWhiteScreen();
+  //image with Tint
+}//End backgroundImage
 //
 //End Home Screen Subprogram
