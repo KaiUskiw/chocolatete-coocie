@@ -39,7 +39,7 @@ void keyPressed() {
   //
   //Key Board Short Cuts
   if ( key=='Q' || key=='q' ) exit(); //Option ESC with keyCode
-  if ( key==CODED || keyCode==ESC )
+  if ( key==CODED || keyCode==ESC ) exit();
   if ( key=='N' || key=='n' ) {
     if ( nightMode==false ) { 
       nightMode = true;
