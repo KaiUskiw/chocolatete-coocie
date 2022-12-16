@@ -24,7 +24,8 @@ void spaceBarText() {
 //
 void quitButtonText() {
   //rect( quitX, quitY, quitWidth, quitHeight );
-  fill(purple); //Ink, hexidecimal copied from Color Selector
+  color ink = (  nightMode==true  ) ? #7D7D28 : purple ; //Note: hexidecimal example, only exists here
+  fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 33; //Change the number until it fits

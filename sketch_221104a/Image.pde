@@ -5,6 +5,17 @@ void imageSetup() {//Image Population
   //quitButtonImage is loaded here if different
 }//End imageSetup
 //
+void  imageTintNightMode() {
+  //Control night mode, colour, with IF 
+  //if (nightMode==true) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  //if (nightMode==false) tint(tintDayMode, tintDayModeOpacity);
+  if ( nightMode==true ) {
+    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  } else {
+    tint(tintDayMode, tintDayModeOpacity);
+  }
+  }//End imageTintNightMode
+  //
 void quitButtonImage() {
   quitButtonImage = backgroundImage;
   //

@@ -52,15 +52,7 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  //Control night mode, colour, with IF 
-  //if (nightMode==true) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  //if (nightMode==false) tint(tintDayMode, tintDayModeOpacity);
-  if ( nightMode==true ) {
-    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  } else {
-    tint(tintDayMode, tintDayModeOpacity);
-  }
-  //End Night Mode Control
+  imageTintNightMode();
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 }//End backgroundImage
