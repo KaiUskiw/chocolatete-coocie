@@ -1,6 +1,6 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
-float quitButtonImageRectX,  quitButtonImageRectY, quitButtonImageRectWidth,   quitButtonImageRectHeight;
+float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 //Blue might change, starts at zero
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
@@ -19,10 +19,23 @@ void homeScreen() { //Exists in VOID DRAW
 //
 //Quit Button, move to Button Subprogram
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
+    /*
     fill(white); //Testing Only
     rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
     noFill(); //Testing Only
+    */
+    noStroke();
+    fill(white);
+    rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+    noFill();
+    stroke(1); //reset dedault
+    quitButtonImage(); //In Aspect Ratio
   } else { 
+    noStroke();
+    fill(white);
+    rect( quitX, quitY, quitWidth, quitHeight );
+    noFill();
+    stroke(1); //reset dedault
     quitButtonText();
   }
   //rect( quitX, quitY, quitWidth, quitHeight );
