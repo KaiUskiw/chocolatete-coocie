@@ -7,6 +7,17 @@ int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
 //
 void homeScreen() { //Exists in VOID DRAW
   println("Arrived at Home Screen"); //Testing for Splash Screen Start Button working
+  //
+  fill(#C6AF84);
+  rect(10,0,300,300);
+  rect(10,333,300,300);
+  rect(10,666,300,300);
+   rect(333,0,300,300);
+  rect(333,333,300,300);
+  rect(333,666,300,300);
+  rect(666,0,300,300);
+  rect(666,333,300,300);
+  rect(666,666,300,300);
   /* Home Screen Expectations
    - Background image using tint()
    - 9 evenly spaced rectangles, Assignment #3
