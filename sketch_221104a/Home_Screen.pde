@@ -19,6 +19,7 @@ void homeScreen() { //Exists in VOID DRAW
   rect(667,0,300,300);
   rect(667,333,300,300);
   rect(667,666,300,300);
+  loadImage("../images used/elephant.jpg");
   //
   /* Home Screen Expectations
    - Background image using tint()
