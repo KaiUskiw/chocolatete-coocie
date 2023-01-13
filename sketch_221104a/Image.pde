@@ -59,5 +59,39 @@ void quitButtonImage() {
   }
 }//End quitButtonImage
 //
+PImage image1, image2, image3, image4, image5, image6, image7, image8, image9;
+//
+void imagesPopulation() {
+  
+  image1 = loadImage("../images used/rhino.jpg");
+  //
+  image2 = loadImage("../images used/elephant.jpg");
+  //
+  image3 = loadImage("../images used/giaraffe.jpg");
+  //
+  image4 = loadImage("");
+  //
+  image5 = loadImage("");
+  //
+  image6 = loadImage("");
+  //
+  image7 = loadImage("");
+  //
+  image8 = loadImage("");
+  //
+  image9 = loadImage("");
+}//End imagePopulation
+//
+void imageNightMode() {
+  //if ( nightMode==false ) tint(tintDayMode, tintDayModeOpacity);//Day mode, see ternary operator
+  //if ( nightMode==true ) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);//Night mode, see ternary operator
+  //
+  if (nightMode==false) {
+    tint(tintDayMode, tintDayModeOpacity);
+  } else {
+    tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  }
+}//End imageNightMode
+//End Images SubProgram
 //End Image Subprogram
   

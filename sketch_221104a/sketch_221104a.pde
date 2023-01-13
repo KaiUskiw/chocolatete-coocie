@@ -1,8 +1,4 @@
 //Global Variables
-float picWidthAdjusted1=0.0, picHeightAdjusted1=0.0;
-float picWidthAdjusted2=0.0, picHeightAdjusted2=0.0;
-float picWidthAdjusted3=0.0, picHeightAdjusted3=0.0;
-PImage pic, pic2, pic3;
 int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false;
 Boolean nightMode=false; //Bonus #1: populate with sytem clock
@@ -15,12 +11,6 @@ color resetDefaultInk=#000000, white=#FFFFFF, brown=#D39344;
 //
 void setup() {
   size(1000, 1000);
-  int picWidth = 800; 
-  int picHeight = 600;
-  int picWidth2 = 860; 
-  int picHeight2 = 529; 
-  int picWidth3 = 325; 
-  int picHeight3 = 485;
   //fullScreen(); //displayWidth, displayHeight
   appWidth = width;
   appHeight = height;
@@ -31,9 +21,6 @@ void setup() {
   population(); //Values based on DISPLAY
   textSetup();
   imageSetup();
-   pic = loadImage("../images used/rhino.jpg");
-  pic2 = loadImage("../images used/elephant.jpg");
-  pic3 = loadImage("../images used/giaraffe.jpg");
 }//End setup
 //
 void draw() {
